@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de interes en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container" >
+
+        <h3 class="h3">Sección 1</h3>
+    <section class="seccion1 mt-4 display-flex ">
+        <div class="col-md-6">
+            <div class=" mt-4 h-100 width-50 p-5 text-bg-dark rounded-3">
+              <h2 >Titulo Jumbotron</h2>
+              <p>Este es el cuerpo del JUMBOTRON!</p>
+              <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalejemplo" type="button">Abrir modal</button>
+            </div>
+        </div>
+        <div class="modal fade" id="modalejemplo" tabindex="-1" aria-labelledby="etiquetamodal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="etiquetamodal">Ventana Modal</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 Esto es el cuerpo del Modal
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Aceptar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+    <hr>
+    <hr>
+    <section class="seccion2">
+        <h3 class="h3">Seccion 2</h3>
+
+        <form class="mt-4" style="justify-content:flex-end;">
+            <div class="mb-3">
+              <label for="Nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="Nombre" aria-describedby="ayudanombre">
+              <div id="ayudanombre" class="form-text">Ingrese solo el Nombre</div>
+            </div>
+            <div class="mb-3" >
+              <label for="Numerotelefono" class="form-label">Telefono</label>
+              <input type="number" class="form-control" id="Numerotelefono">
+            </div>
+            <div class="mb-3">
+                <label for="Mensaje" class="form-label">Mensaje</label>
+                <textarea type="textarea" class="form-control" id="Mensaje"></textarea>
+              </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="checkbox">
+              <label class="form-check-label" for="checkbox">Estoy de acuerdo con las condiciones.</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+
+
+    </section>
+    <hr>
+    <hr>
+    <h3 class="h3">Sección 3</h3>
+    <section class="seccion3">
+
+        <div class="card" style="width: 20rem;">
+            <img src="/12 - bootstrap/1659383770151.jpg" class="card-img-top" alt="imagen">
+            <div class="card-body">
+              <h5 class="card-title">Federico Alejandro Acevedo Haedo</h5>
+              <p class="card-text">Me encuentro realizando el curso 0 to dev en OpenBootcamp y quiero incursionar en el mundo IT.</p>
+              <a href="mailto:fede_acevedohaedo@hotmail.com" class="btn btn-primary">Enviarme un mail con propuestas</a>
+            </div>
+          </div>
+
+    </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" target="_blank" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</html>
